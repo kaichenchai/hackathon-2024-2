@@ -1,0 +1,256 @@
+/* File: styles.css
+ * Author: Sean M
+ * Date: 2022-10-11
+ * Description: Styles not included in Bootstrap
+ * License: MIT
+ * Version: 1.0
+ */
+
+/* =================== Fonts =================== */
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url(./assets/Pattanakarn-Regular-SemiExpanded.woff2);
+}
+
+@font-face {
+    font-family: 'Pattanakarn Bold';
+    src: url(./assets/Pattanakarn-Bold-SemiExpanded.woff2);
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =================== Variables =================== */
+
+:root {
+    /* --c1: #752cb4;
+    --c2: #171f69;
+    --c3: #d80140;
+    --c4: #55f3fa;
+    --c5: #57053e;
+    --c6: #200f45;
+    --c7: #22595c;
+    --c8: #22c0ef;
+    --c9: #2f1244; */
+
+    --font-color: #fff;
+    --background: #2f1244;
+    --primary: #f04e23;
+    --primary-h: #f04e23;
+    --primary-c: #ffffff; 
+    --highlight: #d80140;
+    /* --secondary: #f04e23; */
+    --bs-font-sans-serif: 'Pattanakarn', sans-serif;
+    --font-primary: 'Montserrat', sans-serif;
+
+}
+
+/* =================== Global =================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--font-color);
+    background-color: var(--background);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background-color: var(--highlight);
+}
+
+/* =================== Register =================== */
+
+.register-text {
+    font-size: 2.5rem;
+    text-shadow: rgb(240 78 35 / 50%) 2px 2px 0px, rgb(240 78 35 / 30%) 4px 4px 0px;
+    text-transform: uppercase;
+    font-family: 'Pattanakarn Bold', sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+/* =================== Socials =================== */
+
+.social-icons a {
+    border-radius: 50%;
+}
+
+.social-facebook, .social-linkedin, .social-discord {
+    background: var(--social-icon);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.social-facebook {
+    --social-icon: url(./assets/facebook.png);
+}
+
+.social-linkedin {
+    --social-icon: url(./assets/linkedin.svg);
+}
+
+.social-discord {
+    --social-icon: url(./assets/discordwhitesvg.svg);
+    background-size: 70%;
+    background-color: #5865F2;
+}
+
+/* =================== Buttons =================== */
+
+.btn {
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-c);
+    --bs-btn-hover-color: var(--primary-c);
+    --bs-btn-color: var(--primary-c);
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-color: var(--primary-c);
+    --bs-btn-hover-bg: var(--primary-h);
+    --bs-btn-hover-border-color: var(--primary-h);
+    --bs-btn-focus-shadow-rgb: 34,192,239;
+    --bs-btn-active-color: var(--primary-c);
+    --bs-btn-active-bg: var(--primary-h);
+    --bs-btn-active-border-color: var(--primary-h);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--primary-c);
+    --bs-btn-disabled-bg: var(--primary);
+    --bs-btn-disabled-border-color: var(--primary);
+}
+
+/* =================== FAQ =================== */
+
+.accordion {
+    --bs-accordion-bg: var(--secondary);
+    --bs-accordion-color: var(--font-color);
+    --bs-accordion-btn-color: var(--font-color);
+    --bs-accordion-btn-focus-border-color: var(--font-color);
+    --bs-accordion-active-bg: var(--highlight);
+    --bs-accordion-active-color: var(--font-color);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(216, 1, 64, 0.25);
+    --bs-border-color: var(--highlight);
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+
+/* =================== MISC =================== */
+
+.hl {
+    background: var(--secondary);
+    margin-bottom: 1rem;
+    height: 1px;
+    width: 25%;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-h)
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.bold {
+    font-family: 'Pattanakarn Bold', sans-serif;
+}
+
+/* Background image at top of the page */
+.bg-image {
+    background: linear-gradient(transparent, var(--background)), url(./assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* positioned at a specific place in background image */
+.comssa-image {
+    background: url(./assets/bg-comssa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+/* md media query */
+@media (min-width: 768px) {
+    .comssa-image {
+        display: block;
+    }
+}
+
+.mt-top {
+    margin-top: 1rem;
+}
+
+/* md media query */
+@media (min-width: 768px) {
+    .mt-top {
+        margin-bottom: 6rem;
+    }
+}
+
+/* lg media query */
+@media (min-width: 992px) {
+    .mt-top {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.top-img img {
+    width: clamp(80px, 8vw, 200px);
+}
+
+.sponsors img {
+    max-width: 70%;
+}
