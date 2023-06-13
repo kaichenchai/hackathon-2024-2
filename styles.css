@@ -1,6 +1,6 @@
 /* File: styles.css
  * Author: Sean M
- * Date: 2022-10-11
+ * Date: 2023-06-13
  * Description: Styles not included in Bootstrap
  * License: MIT
  * Version: 1.0
@@ -78,41 +78,6 @@ body {
     text-align: center;
 }
 
-.section-title {
-    text-transform: uppercase;
-}
-
-/* =================== Socials =================== */
-
-.social-icons a {
-    border-radius: 50%;
-}
-
-.social-facebook, .social-linkedin, .social-discord {
-    background: var(--social-icon);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-.social-facebook {
-    --social-icon: url(./assets/facebook.png);
-}
-
-.social-linkedin {
-    --social-icon: url(./assets/linkedin.svg);
-}
-
-.social-discord {
-    --social-icon: url(./assets/discordwhitesvg.svg);
-    background-size: 70%;
-    background-color: #5865F2;
-}
-
 /* =================== Buttons =================== */
 
 .btn {
@@ -140,21 +105,6 @@ body {
     --bs-btn-disabled-color: var(--primary-c);
     --bs-btn-disabled-bg: var(--primary);
     --bs-btn-disabled-border-color: var(--primary);
-}
-
-/* =================== FAQ =================== */
-
-.accordion {
-    --bs-accordion-bg: var(--secondary);
-    --bs-accordion-color: var(--font-color);
-    --bs-accordion-btn-color: var(--font-color);
-    --bs-accordion-btn-focus-border-color: var(--font-color);
-    --bs-accordion-active-bg: var(--highlight);
-    --bs-accordion-active-color: var(--font-color);
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(216, 1, 64, 0.25);
-    --bs-border-color: var(--highlight);
-    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 /* =================== MISC =================== */
@@ -200,57 +150,4 @@ a:hover {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-}
-
-/* positioned at a specific place in background image */
-.comssa-image {
-    background: url(./assets/bg-comssa.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    display: none;
-}
-
-/* md media query */
-@media (min-width: 768px) {
-    .comssa-image {
-        display: block;
-    }
-}
-
-.mt-top {
-    margin-top: 1rem;
-}
-
-/* md media query */
-@media (min-width: 768px) {
-    .mt-top {
-        margin-bottom: 6rem;
-    }
-}
-
-/* lg media query */
-@media (min-width: 992px) {
-    .mt-top {
-        margin-top: 4rem;
-        margin-bottom: 1rem;
-    }
-}
-
-.mt-6 {
-    margin-top: 4rem;
-}
-
-.top-img img {
-    width: clamp(80px, 8vw, 200px);
-}
-
-.sponsors img {
-    max-width: 70%;
 }
