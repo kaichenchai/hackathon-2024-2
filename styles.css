@@ -36,9 +36,10 @@
     --c9: #2f1244; */
 
     --font-color: #fff;
-    --background: #2f1244;
+    --background: #171f69;
+    --background-rgb: 23,31,105;
     --primary: #f04e23;
-    --primary-h: #f04e23;
+    --primary-h: #c42a00;
     --primary-c: #ffffff; 
     --highlight: #d80140;
     /* --secondary: #f04e23; */
@@ -71,7 +72,7 @@ body {
 /* =================== Register =================== */
 
 .register-text {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     text-shadow: rgb(240 78 35 / 50%) 2px 2px 0px, rgb(240 78 35 / 30%) 4px 4px 0px;
     text-transform: uppercase;
     font-family: 'Pattanakarn Bold', sans-serif;
@@ -108,6 +109,16 @@ body {
     --bs-btn-disabled-border-color: var(--primary);
 }
 
+.btn-primary:hover {
+    color: var(--primary-c);
+    background-color: var(--primary-h);
+    border-color: var(--primary-h);
+}
+
+#registration-button {
+    padding: 50px 0px 25px 0px;
+}
+
 /* =================== MISC =================== */
 
 .hl {
@@ -140,7 +151,11 @@ a:hover {
 
 /* Background image at top of the page */
 .bg-image {
-    background: linear-gradient(transparent, var(--background)), url(https://res.cloudinary.com/dec6mijn3/image/upload/v1686982930/Hackathon/bg.webp);
+    background: linear-gradient(
+        rgba(var(--background-rgb), 0.33) 0%,
+        rgba(var(--background-rgb), 0.33) 80%,
+        rgba(var(--background-rgb), 1)) 100%,
+        url(https://res.cloudinary.com/dec6mijn3/image/upload/v1686982930/Hackathon/bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -159,10 +174,26 @@ a:hover {
 
 /* For Logo and main text at the top of the page */
 #header {
-    padding-top: 100px;
     padding-bottom: 25px;
 }
 
 #logo {
     max-width: 150px;
+}
+
+.main-image {
+    max-height: 100px;
+    width: clamp(50px, 90vw, 600px);
+}
+
+.tomahawk-labs {
+    height: clamp(25px,15vw,120px);
+}
+
+.eecms {
+    height: clamp(25px,25vw,200px);
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }

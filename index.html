@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- Bootstrap 4 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom Fonts -->
@@ -66,44 +66,74 @@
     
     <!-- Begin page content -->
     <main class="flex-shrink-0 home-content">
-        <div class="container">
+        <div class="d-flex flex-column text-center">
+            <div class="col-12 mt-3 mb-5">
 
-            <div class="row flex-column-reverse flex-lg-row text-center">
-                <div class="col-12 mt-3 mb-5">
-
-                    <div id="header" class="d-flex justify-content-center mb-4">
-                        <img id="logo" src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686984621/Hackathon/logo.svg" class="d-none d-md-block">
-                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686982929/Hackathon/h22.svg" class="mx-4" alt="ComSSA Hackathon 2023">
-                    </div>
-                        
-                    <!-- Date -->
-                    <div class="d-flex justify-content-center mb-3">
-                        <h4 class="bold primary">July 28 - 30</h4>
-                    </div>
+                <div id="header" class="d-flex justify-content-center mb-4">
+                    <img id="logo" src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686984621/Hackathon/logo.svg" class="d-none d-md-block">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686982929/Hackathon/h22.svg" class="mx-4 main-image" alt="ComSSA Hackathon 2023">
+                </div>
                     
-                    <!-- Register text -->
-                    <h1 class="register-text">Pre-registrations now open!</h1>
+                <!-- Date -->
+                <div class="d-flex justify-content-center mb-3">
+                    <h4 class="bold primary">July 28 - 30</h4>
+                </div>
+                
+                <!-- Register text -->
+                <h1 class="register-text">Pre-registrations now open!</h1>
 
-                    <!-- Description -->
-                    <p class="montserrat fw-600">Hackathon topic coming soon... Stay tuned.</p>
+                <!-- Description -->
+                <p class="montserrat fw-600">Hackathon topic coming soon... Stay tuned.</p>
 
-                    <!-- Horizontal line -->
-                    <div class="d-flex justify-content-center">
-                        <div class="hl"></div>
-                    </div>
+                <!-- Horizontal line -->
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="hl"></div>
+                </div>
 
-                    <!-- Registration -->
+                <!-- Registration -->
+                <div id="registration-button">
                     <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
                         <span class="mx-4 fw-600">Signup now</span>
                     </a>
-
-                    <!-- Contact Us -->
-                    <p class="montserrat mt-3">Contact us at <a href="https://www.facebook.com/ComSSACurtin">facebook.com/ComSSACurtin</a> for further questions</p>
                 </div>
+
+                <!-- Contact Us -->
+                <p class="montserrat mt-3">Contact us at <a href="https://www.facebook.com/ComSSACurtin" class="fbLink">facebook.com/ComSSACurtin</a> for further questions</p>
             </div>
 
+            <div class="col-12 mt-3">
+                <div class="row top-img">
+                    <div class="col-12 d-flex flex-column align-items-center my-5">
+                        <h4 class="mb-4">Proudly partnered with </h4>
+                        <img class="eecms" src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686988749/ComSSA-Website/Sponsors/eecms.png" class="img-fluid" alt="EECMS Logo">
+                    </div>
+                </div>
+                <h4 class="w-100 text-center mt-5 mb-4">ComSSA is proudly sponsored by</h4>
+                <div class="row sponsors justify-content-center">
+                    
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/tomahawk-labs.png" class="img-fluid tomahawk-labs" alt="Tomahawk Labs Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686988492/ComSSA-Website/Sponsors/vgw-white.webp" class="img-fluid" alt="VGW Logo">
+                    </div>
+                </div>
+                <div class="row sponsors justify-content-center">
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686989834/ComSSA-Website/Sponsors/atlassian-white.svg" class="img-fluid" style="width: inherit" alt="Atlassian Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_500/v1686988742/ComSSA-Website/Sponsors/redi-software-white_yeastl.png" style="max-width: 45%" class="img-fluid" alt="Redi Software Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/imc.png" class="img-fluid" alt="IMC Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/bankwest.png" class="img-fluid" alt="Bankwest Logo">
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 
 </div>
