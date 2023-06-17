@@ -76,6 +76,7 @@ body {
     text-transform: uppercase;
     font-family: 'Pattanakarn Bold', sans-serif;
     text-align: center;
+    padding: 50px 0px;
 }
 
 /* =================== Buttons =================== */
@@ -110,7 +111,7 @@ body {
 /* =================== MISC =================== */
 
 .hl {
-    background: var(--secondary);
+    background: var(--primary);
     margin-bottom: 1rem;
     height: 1px;
     width: 25%;
@@ -139,7 +140,7 @@ a:hover {
 
 /* Background image at top of the page */
 .bg-image {
-    background: linear-gradient(transparent, var(--background)), url(./assets/bg.png);
+    background: linear-gradient(transparent, var(--background)), url(https://res.cloudinary.com/dec6mijn3/image/upload/v1686982930/Hackathon/bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,6 +149,20 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     opacity: 0.5;
+}
+
+.home-content {
+    z-index: 2;
+}
+
+/* For Logo and main text at the top of the page */
+#header {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+#logo {
+    max-width: 150px;
 }

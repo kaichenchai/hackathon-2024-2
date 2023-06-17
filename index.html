@@ -3,7 +3,7 @@
 <html lang="en" class="h-100">
   <head>
     <!-- Main -->
-    <title>ComSSA Hackathon 2022</title>
+    <title>ComSSA Hackathon 2023</title>
     <meta charset="utf-8">
     <meta name="author" content="Made with ❤ by ComSSA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,9 +34,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap 5.2.2 -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom Fonts -->
     <link rel="preload" href="./assets/Pattanakarn-Regular-SemiExpanded.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -59,18 +59,23 @@
     <meta name="theme-color" content="#2f1244">
 
   </head>
-
-<body class="d-flex flex-column justify-content-center h-100">
+<body>
+<div class="d-flex flex-column justify-content-center h-100">
 
     <div class="bg-image"></div>
     
     <!-- Begin page content -->
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 home-content">
         <div class="container">
 
             <div class="row flex-column-reverse flex-lg-row text-center">
                 <div class="col-12 mt-3 mb-5">
-                    <img src="./assets/h22.svg" class="mb-4 mx-4" alt="ComSSA Hackathon 2023">
+
+                    <div id="header" class="d-flex justify-content-center mb-4">
+                        <img id="logo" src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686984621/Hackathon/logo.svg" class="d-none d-md-block">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686982929/Hackathon/h22.svg" class="mx-4" alt="ComSSA Hackathon 2023">
+                    </div>
+                        
                     <!-- Date -->
                     <div class="d-flex justify-content-center mb-3">
                         <h4 class="bold primary">July 28 - 30</h4>
@@ -88,12 +93,12 @@
                     </div>
 
                     <!-- Registration -->
-                    <a href="#" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
+                    <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
                         <span class="mx-4 fw-600">Signup now</span>
                     </a>
 
                     <!-- Contact Us -->
-                    <p class="montserrat mt-3">Contact us at facebook.com/ComSSACurtin for further questions</p>
+                    <p class="montserrat mt-3">Contact us at <a href="https://www.facebook.com/ComSSACurtin">facebook.com/ComSSACurtin</a> for further questions</p>
                 </div>
             </div>
 
@@ -101,5 +106,6 @@
 
     </main>
 
+</div>
 </body>
 </html>
