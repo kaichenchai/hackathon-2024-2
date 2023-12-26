@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Main -->
+    <title>ComSSA Hackathon 2023</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Made with ❤ by ComSSA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta name="description" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hackathon.comssa.org.au/">
+    <meta property="og:title" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta property="og:description" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta property="og:image" content="https://hackathon.comssa.org.au/assets/CH22_Branding_Elements_1.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hackathon.comssa.org.au/">
+    <meta property="twitter:title" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta property="twitter:description" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta property="twitter:image" content="https://hackathon.comssa.org.au/assets/CH22_Branding_Elements_1.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 4 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Fonts -->
+    <link rel="preload" href="./assets/Pattanakarn-Regular-SemiExpanded.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous" />
+    <link rel="preload" href="./assets/Pattanakarn-Bold-SemiExpanded.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous" />
+
+    <!-- Custom CSS and JS-->
+    <link rel="stylesheet" href="./styles.css?v=1">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav/favicon-16x16.png">
+    <link rel="manifest" href="./assets/fav/site.webmanifest">
+    <link rel="mask-icon" href="./assets/fav/safari-pinned-tab.svg" color="#2f1244">
+    <link rel="shortcut icon" href="./assets/fav/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Curtin Singapore X ComSSA Hackathon 2023">
+    <meta name="application-name" content="COMSSA Hackathon 2023">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="./assets/fav/browserconfig.xml">
+    <meta name="theme-color" content="#2f1244">
+
+</head>
+
+<body class="container">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style> @font-face {font-family: 'Pattanakarn';src: url(/themes/core/static/fonts/Pattanakarn-Regular-SemiExpanded.woff2);}@font-face {font-family: 'Pattanakarn Bold';src: url(/themes/core/static/fonts/Pattanakarn-Bold-SemiExpanded.woff2);}.montserrat {font-family: 'Montserrat', sans-serif;}:root {--font-color: #fff;--background: #171f69;--background-rgb: 23,31,105;--primary: #f04e23;--primary-h: #c42a00;--primary-c: #ffffff;--highlight: #d80140;--bs-font-sans-serif: 'Pattanakarn', sans-serif;--font-primary: 'Montserrat', sans-serif;}* {box-sizing: border-box;margin: 0;padding: 0;}body {font-size: 1rem;line-height: 1.5;color: var(--font-color);background-color: var(--background);-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: transparent;}::selection {background-color: var(--highlight);}.welcome-text {font-size: clamp(0.5rem, 8vw, 3rem);text-shadow: rgb(240 78 35 / 69%) 3px 3px 0px;text-transform: uppercase;font-family: 'Pattanakarn Bold', sans-serif;text-align: center;padding: 20px 0px 20px;}.btn {font-family: var(--font-primary);text-transform: uppercase;border-radius: 0;}.btn-primary {background-color: var(--primary);border-color: var(--primary);color: var(--primary-c);--bs-btn-hover-color: var(--primary-c);--bs-btn-color: var(--primary-c);--bs-btn-bg: var(--primary);--bs-btn-border-color: var(--primary);--bs-btn-hover-color: var(--primary-c);--bs-btn-hover-bg: var(--primary-h);--bs-btn-hover-border-color: var(--primary-h);--bs-btn-focus-shadow-rgb: 34,192,239;--bs-btn-active-color: var(--primary-c);--bs-btn-active-bg: var(--primary-h);--bs-btn-active-border-color: var(--primary-h);--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color: var(--primary-c);--bs-btn-disabled-bg: var(--primary);--bs-btn-disabled-border-color: var(--primary);}.btn-primary:hover {color: var(--primary-c);background-color: var(--primary-h);border-color: var(--primary-h);}#registration-button {padding: 5px 0px 25px 0px;}#registration-button a{font-size: 1.1rem;padding: 10px 24px;}.hl {background: var(--primary);margin-bottom: 0rem;height: 1px;width:clamp(80px, 40%, 200px);}.fw-600 {font-weight: 600;}a {color: var(--primary);font-weight: bold;}a:hover {color: var(--primary-h) }.primary {color: var(--primary);}.bold {font-family: 'Pattanakarn Bold', sans-serif;}.bg-image {background: linear-gradient( rgba(var(--background-rgb), 0.33) 0%, rgba(var(--background-rgb), 0.33) 80%, rgba(var(--background-rgb), 1)) 100%, url(https://res.cloudinary.com/dec6mijn3/image/upload/v1686982930/Hackathon/bg.webp);background-position: center;background-size: cover;background-repeat: no-repeat;position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 1;opacity: 0.5;}.home-content {z-index: 2;}#header {padding-bottom: 25px;}#logo {max-width: 150px;}.main-image {max-height: 100px;width: clamp(50px, 90vw, 700px);}.tomahawk-labs,.sq-img {height: clamp(25px,15vw,100px);}.eecms {height: clamp(25px,25vw,200px);}.comssa {height: clamp(25px,10vw,70px);}#sponsors {border: 1px red dashed;padding-top: -80px;}p{font-size:clamp(1rem, 2vw, 1.25rem);}html{background:#171f69}main {margin-bottom: 20px; padding-top: 2.5rem;}</style>
+<div class="d-flex flex-column justify-content-center h-100">
+
+    <div class="bg-image"></div>
+    
+    <!-- Begin page content -->
+    <main class="flex-shrink-0 home-content">
+        <div class="d-flex flex-column text-center">
+            <div class="col-12 mt-3">
+
+                <div id="header" class="d-flex justify-content-center">
+                    <!-- <img id="logo" src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686984621/Hackathon/logo.svg" class="d-none d-md-block"> -->
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1691560137/Hackathon/CSING_Hackathon_2023.svg" class="mx-4 main-image" alt="ComSSA Hackathon 2023">
+                </div>
+                    
+                <!-- Date -->
+                <div class="d-flex justify-content-center mb-3">
+                    <h5 class="montserrat fw-600 primary">8 to 10 September, online and in-person at Curtin Singapore</h5>
+                </div>
+                
+                <!-- Welcome text -->
+                    <h1 class="welcome-text">Astro Renaissance<br>Part II</h1>
+
+                <div class="d-flex justify-content-center mt-1 mb-4">
+                  <div class="hl"></div>
+                </div>
+				
+              <div class="d-flex justify-content-center">
+	            <p class="montserrat fw-600" style="max-width: 50ch;">A 3-day hackathon devised to develop your skills to discover new technologies, solve an exciting fictional challenge, and share your solutions with the tech community. </p>
+              </div>
+                
+              <!-- Registration -->
+                <div id="registration-button">
+                    <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
+                        <span class="mx-4 fw-600">Register now</span>
+                    </a>
+                </div>
+
+              <p class="montserrat mt-3">Join our <a href="https://discord.gg/ByXDJDBMyg" class="fbLink">Discord Server</a> for questions and keeping up to date!</p>
+
+                <!-- Contact Us -->
+                <!-- <p class="montserrat mt-3">Contact us at <a href="https://www.facebook.com/ComSSACurtin" class="fbLink">facebook.com/ComSSACurtin</a> for further questions</p> -->
+              
+              <!-- Carousel Section -->
+                <div class="col-12 my-5 pt-5">
+                    <h4 class="mb-4">PHOTOS FROM PREVIOUS HACKATHONS</h4>
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                            <li data-target="#carousel" data-slide-to="4"></li>
+                            <li data-target="#carousel" data-slide-to="5"></li>
+                            <li data-target="#carousel" data-slide-to="6"></li>
+                            <li data-target="#carousel" data-slide-to="7"></li>
+                            <li data-target="#carousel" data-slide-to="8"></li>
+                            <li data-target="#carousel" data-slide-to="9"></li>
+                            <li data-target="#carousel" data-slide-to="10"></li>
+                            <li data-target="#carousel" data-slide-to="11"></li>
+                            <li data-target="#carousel" data-slide-to="12"></li>
+                            <li data-target="#carousel" data-slide-to="13"></li>
+                            <li data-target="#carousel" data-slide-to="14"></li>
+                            <li data-target="#carousel" data-slide-to="15"></li>
+                            <li data-target="#carousel" data-slide-to="16"></li>
+                            <li data-target="#carousel" data-slide-to="17"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                                                      
+                          	<!-- 2023 -->
+                            <div class="carousel-item active">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_2000/ar_1.8,c_crop,w_2000,fl_lossy,f_auto/v1690994303/Hackathon/hackathon2023/p01.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA Hackathon - 2023</h5>
+                                </div>
+                            </div>
+
+                          	<div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_2000/ar_1.8,c_crop,w_2000,fl_lossy,f_auto/v1690994303/Hackathon/hackathon2023/p02.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA Hackathon - 2023</h5>
+                                </div>
+                            </div>
+                          <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_2000/ar_1.8,c_crop,w_2000,fl_lossy,f_auto/v1690994303/Hackathon/hackathon2023/p03.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA Hackathon - 2023</h5>
+                                </div>
+                            </div>
+                          <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_2000/ar_1.8,c_crop,w_2000,fl_lossy,f_auto/v1690994303/Hackathon/hackathon2023/p04.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA Hackathon - 2023</h5>
+                                </div>
+                            </div>
+                          
+                          <!-- 2022 -->
+                          
+                          <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/ar_1.8,c_scale,w_2000,fl_lossy,f_auto/v1688456486/Hackathon/hackathon2022/p01.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x CASSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/ar_1.8,c_scale,w_2000,fl_lossy,f_auto/v1688456478/Hackathon/hackathon2022/p02.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x CASSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/ar_1.8,c_scale,w_2000,fl_lossy,f_auto/v1688456610/Hackathon/hackathon2022/p03.webp"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x CASSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/dec6mijn3/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1688457179/Hackathon/hackathon2022/p04.png"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x CASSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <!-- ar_1.8,c_scale,w_2000,fl_lossy,f_auto FOR LARGE IMAGES -->
+                            <!-- ar_1.8,c_crop,fl_lossy,f_auto FOR UP TO 2K -->
+                            
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182202/Hackathon/H7409018_S_nsnrvi.png"
+                                    class="d-block w-100" alt="Wide shot of students listening">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182201/Hackathon/H7409238_S_dofhvn.png"
+                                    class="d-block w-100" alt="Mid shot of a group of students">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182204/Hackathon/H7409524_S_gyplss.png"
+                                    class="d-block w-100" alt="Wide shot of many students">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182203/Hackathon/H7409544_S_z2k3sq.png"
+                                    class="d-block w-100" alt="Mid shot of students and staff">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,y_0,fl_lossy,f_auto/v1666182199/Hackathon/IMG_3824_S_oj2wky.png"
+                                    class="d-block w-100" alt="Students pointing at laptop">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182201/Hackathon/IMG_4467_S_qkjesy.png"
+                                    class="d-block w-100" alt="ComSSA team working">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">Curtin Singapore x ComSSA Hackathon - 2022</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182294/Hackathon/prev1_ejod9a.webp"
+                                    class="d-block w-100" alt="Medium shot of a team presenting">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x IET Hackathon - 2021</h5>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182294/Hackathon/prev2_hal9jh.webp"
+                                    class="d-block w-100" alt="Mid shot of a team">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x IET Hackathon - 2021</h5>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182294/Hackathon/prev3_gcagk6.webp"
+                                    class="d-block w-100" alt="Wide shot of a team presenting">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x IET Hackathon - 2021</h5>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://res.cloudinary.com/s3ansh33p/image/upload/ar_1.8,c_crop,fl_lossy,f_auto/v1666182294/Hackathon/prev4_xpwqiv.webp"
+                                    class="d-block w-100" alt="Wide shot of a team presenting">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mb-3">ComSSA x IET Hackathon - 2021</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                </div>
+              
+              <!-- Info Section
+                <div class="col-12 my-5 pt-5 text-left" id="questions-and-answers">
+                    <h4 class="text-center">FAQs AND INFO</h4>
+
+                    <style>
+                        .answer {
+                            /* text-transform: uppercase; */
+                        }
+
+                        .question-title {
+                            color: #f04e23;
+                            font-weight: bold;
+                        }
+
+                        #questions-and-answers {
+                            margin-bottom: 5%;
+                        }
+
+                        .faq-image {
+                            width: clamp(40px, 3vw, 60px);
+                            /* min-width: 40px;
+                        width: 3vw;
+                        max-width: 60px; */
+                        }
+
+                        .questionMark-image {
+                            width: clamp(40px, 2vw, 60px);
+                        }
+                    </style>
+                    <div class="row">
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/question.svg"
+                                class="pt-2 mx-4 questionMark-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column pl-3">
+                                <p class="question-title primary">Q: WHAT IS A HACKATHON</p>
+                                <p class="answer">
+                                    A: A Hackathon is an exciting event where participants come together to tackle a
+                                    problem or challenge.
+                                    Teams collaborate to brainstorm, design and pitch their best solution. It's an
+                                    opportunity to apply your creativity and problem-solving skills in a practical and
+                                    open-ended setting.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/light.svg"
+                                class="mx-4 faq-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column">
+                                <p class="question-title primary">Q: WILL THERE BE FOOD AND BEVERAGES AVAILABLE AT THE
+                                    EVENT?</p>
+                                <p class="answer">
+                                    A: Absolutely. There will be food, drinks, and snacks provided on all three days of
+                                    the Hackathon. We will take into account all dietary limitations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/light.svg"
+                                class="mx-4 faq-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column">
+                                <p class="question-title">Q: DO I NEED TO BRING ANYTHING FOR THE EVENT?</p>
+                                <p class="answer">
+                                    A: Yes, there are a few things you should bring along. Make sure to bring your
+                                    laptop (With your charger), as it will be your primary tool for developing and
+                                    presenting your solution.
+                                    Additionally, consider bringing any other personal items or tools that you might
+                                    need to support your work during the event.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/people.svg"
+                                class="mt-2 mx-4 faq-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column">
+                                <p class="question-title">Q: DO I NEED TO HAVE A TEAM TO PARTICIPATE?</p>
+                                <p class="answer">
+                                    A: No, While it is recommended to sign up as a team, we can assign you to a team or
+                                    you may choose to join a team by joining our hackathon discord or via
+                                    hackathon.comssa.org.au.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <!-- image seems like it is off center to the left slightly
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/why.svg"
+                                class="mx-4 questionMark-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column pl-3">
+                                <p class="question-title">Q: WHAT SKILL LEVEL DO I HAVE TO BE AT IN ORDER TO JOIN?</p>
+                                <p class="answer">
+                                    A: You do not need computing/coding knowledge to join. The only criteria you need to
+                                    join is to be a current student (high school, university, TAFE, etc.)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 col-12 col-md-6 d-flex align-items-start">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1688455839/Hackathon/icons/light.svg"
+                                class="mx-4 faq-image" alt="ComSSA Hackathon 2023">
+                            <div class="d-flex flex-column">
+                                <p class="question-title">Q: WHY IS IT CALLED PART 1?</p>
+                                <p class="answer">
+                                    A: This event is called 'Part 1' because 'Part 2' of Astro Renaissance will be held
+                                    at the Curtin Singapore campus, proudly collaborated with them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              	-->
+
+                <!-- Discord Section -->
+                <div class="col-12 my-5 pt-5 d-md-flex flex-md-equal">
+                    <div class="col-12 col-md-6 d-flex align-items-center mb-5">
+                        <div class="row align-items-center">
+                            <h4>JOIN THE DISCORD</h4>
+                            <p class="text-left mr-md-2">Join our Hackathon Discord for any further questions or to find a team.</p>
+                            <a class="btn btn-primary btn-lg rounded-pill d-flex align-items-center justify-content-center"
+                                href="https://discord.gg/ByXDJDBMyg" target="_blank" rel="noopener">
+                                <span class="mx-4 fw-600">Join Here!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-5">
+                        <div class="row">
+                          <iframe src="https://discord.com/widget?id=1108722232068407326&theme=dark" width="100%" 
+                                height="500" allowtransparency="true" frameborder="0"
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        </div>
+                    </div>
+                </div>
+              	
+              <!-- <p class="montserrat mt-3">Join our <a href="https://discord.gg/ByXDJDBMyg" class="fbLink">Discord Server</a> for any further questions/finding team members.</p> -->
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="row top-img">
+                    <div class="col-12 d-flex flex-column align-items-center my-5">
+                        <h4 class="mb-4">Organised by</h4>
+                      		<div class="row sponsors justify-content-center">
+                    
+                              
+                              <div class="col-6 col-lg-3 d-none d-lg-flex align-items-center justify-content-center mb-3">
+                                  <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_468/v1685110336/ComSSA-Website/C_Reversed.webp" class="img-fluid sq-img" alt="ComSSA Logo">
+                              </div>
+                              
+                              <div class="col-9 col-lg-4 d-flex align-items-center justify-content-center mb-3">
+                                  <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1691561681/Hackathon/CSing.jpg" class="img-fluid" alt="Curtin Singapore Logo" style="max-height: 70%";>
+                              </div>
+                              
+                              <div class="col-4 col-lg-3 d-flex d-lg-none align-items-center justify-content-center mb-3">
+                                  <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_468/v1685110336/ComSSA-Website/C_Reversed.webp" class="img-fluid sq-img" alt="ComSSA Logo">
+                              </div>
+                              
+                              <div class="col-4 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686988749/ComSSA-Website/Sponsors/eecms.png" class="img-fluid sq-img" alt="Curtin EECMS Logo">
+                                </div>
+                      		</div>
+                    </div>
+                </div>
+             
+              
+                <h4 class="w-100 text-center mb-4">ComSSA is proudly sponsored by</h4>
+                <div class="row sponsors justify-content-center">
+                    
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/tomahawk-labs.png" class="img-fluid tomahawk-labs" alt="Tomahawk Labs Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686988492/ComSSA-Website/Sponsors/vgw-white.webp" class="img-fluid" alt="VGW Logo">
+                    </div>
+                  <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686989834/ComSSA-Website/Sponsors/atlassian-white.svg" class="img-fluid" style="width: inherit" alt="Atlassian Logo">
+                    </div>
+                </div>
+                <div class="row sponsors justify-content-center">
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_500/v1686988742/ComSSA-Website/Sponsors/redi-software-white_yeastl.png" style="max-width: 45%" class="img-fluid" alt="Redi Software Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/imc.png" class="img-fluid" alt="IMC Logo">
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/bankwest.png" class="img-fluid" alt="Bankwest Logo">
+                    </div>
+                  <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                        <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1690508463/ComSSA-Website/Sponsors/mr-logo.png" class="img-fluid" alt="Mechanical Rocks Logo" style="height: 90%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+</body>
+
+</html>
