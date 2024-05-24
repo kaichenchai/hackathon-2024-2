@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Main -->
+    <title>ComSSA Hackathon 2024</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Made with ❤ by ComSSA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="ComSSA Hackathon 2024">
+    <meta name="description" content="ComSSA Hackathon 2024">
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hackathon.comssa.org.au/">
+    <meta property="og:title" content="ComSSA Hackathon 2023">
+    <meta property="og:description" content="ComSSA Hackathon 2023">
+    <meta property="og:image" content="https://hackathon.comssa.org.au/assets/CH22_Branding_Elements_1.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hackathon.comssa.org.au/">
+    <meta property="twitter:title" content="ComSSA Hackathon 2023">
+    <meta property="twitter:description" content="ComSSA Hackathon 2023">
+    <meta property="twitter:image" content="https://hackathon.comssa.org.au/assets/CH22_Branding_Elements_1.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 4 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- jQuery 2.1.3 -->
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- Velocity.JS 1.1.0 -->
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js" integrity="sha512-GvV09O/SNrtq1Au2eFYt+Yk3czV9lO/XGr272nKGvVq9cd3jrDdAwM+Z8ETKS/NkaAKug4HVIftP08M6EfMNYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom Fonts -->
+    <link rel="preload" href="./assets/Pattanakarn-Bold-SemiExpanded.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Custom CSS and JS-->
+    <!-- <link rel="stylesheet" href="./styles.css?v=1"> -->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav/favicon-16x16.png">
+    <link rel="manifest" href="./assets/fav/site.webmanifest">
+    <link rel="mask-icon" href="./assets/fav/safari-pinned-tab.svg" color="#2f1244">
+    <link rel="shortcut icon" href="./assets/fav/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="ComSSA Hackathon 2023">
+    <meta name="application-name" content="COMSSA Hackathon 2023">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="./assets/fav/browserconfig.xml">
+    <meta name="theme-color" content="#2f1244">
+
+</head>
+
+<body class="container">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+
+    /* =================== Fonts =================== */
+    
+    /* uncomment this on prod
+    @font-face {
+        font-family: 'Pattanakarn Bold';
+        src: url(/themes/core/static/fonts/Pattanakarn-Bold-SemiExpanded.woff2);
+    } */
+
+    @font-face {
+        font-family: 'Pattanakarn Bold';
+        src: url(./assets/Pattanakarn-Bold-SemiExpanded.woff2);
+    }
+
+    .montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* =================== Variables =================== */
+
+    :root {
+
+        /* --c1: #752cb4;
+        --c2: #171f69;
+        --c3: #d80140;
+        --c4: #55f3fa;
+        --c5: #57053e;
+        --c6: #200f45;
+        --c7: #22595c;
+        --c8: #22c0ef;
+        --c9: #2f1244; */
+
+        
+        --c1: #FFB001;
+        --c2: #2F1244;
+        --c3: #D80140;
+        --c4: #171F69;
+
+        --font-color: #fff;
+        --background: #2f1244;
+        --background-rgb: 47,18,68;
+        --primary: #FFB001;
+        --primary-h: #ffbe32;
+        --primary-c: #000000;
+        --highlight: #d80140;
+        --bs-font-sans-serif: 'Pattanakarn', sans-serif;
+        --font-primary: 'Montserrat', sans-serif;
+    }
+
+    /* =================== Global =================== */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--font-color);
+        background-color: var(--background);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    ::selection {
+        background-color: var(--highlight);
+    }
+
+    /* =================== Welcome =================== */
+
+    .welcome-text {
+        font-size: clamp(0.5rem, 5vw, 3rem);
+        text-shadow: rgb(240 78 35 / 69%) 3px 3px 0px;
+        text-transform: uppercase;
+        font-family: 'Pattanakarn Bold', sans-serif;
+    }
+    
+    /* =================== Buttons =================== */
+    
+    .btn {
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        border-radius: 0;
+    }
+    .btn-primary {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: var(--primary-c);
+        --bs-btn-hover-color: var(--primary-c);
+        --bs-btn-color: var(--primary-c);
+        --bs-btn-bg: var(--primary);
+        --bs-btn-border-color: var(--primary);
+        --bs-btn-hover-color: var(--primary-c);
+        --bs-btn-hover-bg: var(--primary-h);
+        --bs-btn-hover-border-color: var(--primary-h);
+        --bs-btn-focus-shadow-rgb: 34,192,239;
+        --bs-btn-active-color: var(--primary-c);
+        --bs-btn-active-bg: var(--primary-h);
+        --bs-btn-active-border-color: var(--primary-h);
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: var(--primary-c);
+        --bs-btn-disabled-bg: var(--primary);
+        --bs-btn-disabled-border-color: var(--primary);
+    }
+    .btn-primary:hover {
+        color: var(--primary-c);
+        background-color: var(--primary-h);
+        border-color: var(--primary-h);
+    }
+
+
+    /* ================= ACCORDIAN ================= */
+    .card {
+        background-color: var(--background);
+    }
+    .card-body {
+        background-color: var(--background);
+    }
+    .card-header {
+        background-color: var(--primary);
+        color: var(--primary-c);
+    }
+    .btn-link {
+        color: var(--primary-c);
+        font-weight: bold;
+    }
+
+    /* =================== Carousel =================== */
+
+    .carousel {
+        border: 3.5px solid var(--primary);
+      	position: relative;
+ 	}
+  	.carousel-indicators li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 3px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+    }
+  
+  	/* some weird versioning going on, this fixes the carousel */
+    .carousel-item-next:not(.carousel-item-left),.active.carousel-item-right {
+        transform: translateX(100%)!important
+    }
+
+    .carousel-item-prev:not(.carousel-item-right),.active.carousel-item-left {
+        transform: translateX(-100%)!important
+    }
+  
+    .carousel-item-next:not(.carousel-item-start),.active.carousel-item-end {
+        transform: translate(0%)
+    }
+
+    .carousel-item-prev:not(.carousel-item-end),.active.carousel-item-start {
+        transform: translate(0%)
+    }
+
+    /* =================== Countdown =================== */
+
+    .countdown-dots {
+        border: 4px dotted #fff;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%; 
+    }
+
+    .path {
+        stroke-dasharray: 1000 1000;/*615.423095703125;*/
+        stroke-dashoffset: 1000;/*615.423095703125;*/
+        /*animation: dash 5s linear forwards;
+        -webkit-animation: dash 3s linear forwards;*/
+    }
+
+    .figure {
+        position:relative;
+    }
+
+    .figure p {
+        position:absolute;
+        top:55px;
+        left:35px;
+        font-size:72px;	
+        margin:0;
+    }
+
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80px;
+    }
+
+    .timer-value {
+        font-size: 2.5rem;
+    }
+
+    .timer-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    .sf, .countdown-dots, .figure {
+        transform: scale(1);
+    }
+
+    /* sm media query */
+    @media (min-width: 576px) {
+        .sf, .countdown-dots, .figure {
+            transform: scale(1.2);
+        }
+    }
+
+    /* lg media query */
+    @media (min-width: 992px) {
+        .sf, .countdown-dots, .figure {
+            transform: scale(1.3);
+        }
+    }
+
+    /* xl media query */
+    @media (min-width: 1200px) {
+        .sf, .countdown-dots, .figure {
+            transform: scale(1.4);
+        }
+    }
+
+    /* =================== MISC =================== */
+
+    #registration-button {
+        padding: 5px 0px 25px 0px;
+    }
+    #registration-button a{
+        font-size: 1.1rem;
+        padding: 10px 24px;
+    }
+    .hl {
+        background: var(--primary);
+        margin-bottom: 0rem;
+        height: 1px;
+        /* width:clamp(80px, 40%, 200px); */
+        width: 100%;
+    }
+    .fw-600 {
+        font-weight: 600;
+    }
+    a {
+        color: var(--primary);
+        font-weight: bold;
+    }
+    a:hover {
+        color: var(--primary-h)
+    }
+    .primary {
+        color: var(--primary);
+    }
+    .bold {
+        font-family: 'Pattanakarn Bold', sans-serif;
+    }
+
+    /* Background image at top of the page */
+    .bg-image {
+        background: linear-gradient( rgba(var(--background-rgb), 0.33) 0%, rgba(var(--background-rgb), 0.33) 80%, rgba(var(--background-rgb), 1)) 100%, url(https://res.cloudinary.com/dec6mijn3/image/upload/v1714031213/Hackathon/hackathon2024/background_photo.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.5;
+    }
+    .home-content {
+        z-index: 2;
+    }
+
+    /* For Logo and main text at the top of the page */
+
+    #header {
+        padding-bottom: 25px;
+    }
+    #logo {
+        max-width: 150px;
+        width: clamp(125px, calc(100px + 5vw), 225px);
+    }
+    .main-image {
+        max-height: 200px;
+        width: clamp(100px, 60vw, 600px);
+        max-width: 600px;
+    }
+    .tomahawk-labs,.sq-img {
+        height: clamp(25px,15vw,100px);
+    }
+    .eecms {
+        height: clamp(25px,25vw,200px);
+    }
+    .comssa {
+        height: clamp(25px,10vw,70px);
+    }
+    #sponsors {
+        border: 1px red dashed;
+        padding-top: -80px;
+    }
+    p {
+        font-size:clamp(1rem, 2vw, 1.25rem);
+    }
+    main {
+        margin-bottom: 20px; padding-top: 2.5rem;
+    }
+    br {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .trophy-image {
+        width: clamp(40px, 3vw, 60px);
+        /* min-width: 40px;
+        width: 3vw;
+        max-width: 60px; */
+    }
+
+</style>
+<div class="d-flex flex-column justify-content-center h-100">
+
+    <div class="bg-image"></div>
+    
+    <!-- Begin page content -->
+    <main class="flex-shrink-0 home-content">
+        <div class="d-flex flex-column text-center">
+            <div class="col-12 my-3"><div class="d-flex flex-column">
+                <div id="header" class="d-flex justify-content-center">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1714036365/Hackathon/hackathon2024/Hackathon_initial_marketing_poster_iczlj1.webp" class="mx-4 main-image" alt="ComSSA Hackathon 2023">
+                </div>
+            </div>
+        </div>
+
+        <!-- WELCOME  -->
+        <div class="d-flex flex-column justify-content-center h-100 mt-5">
+            <div class="d-flex flex-column text-center text-light">
+                <div class="col-12 mt-3 mb-5">
+                    <!-- Welcome text -->
+                    <h1 class="welcome-text">Welcome to Earth's Ultimatum</h1>             
+                    <p class="montserrat"> Join our <a href="https://discord.gg/RMVBA5c62f" class="fbLink">Discord Server</a> for questions and keeping up to date!</p>
+                    
+                    <a href="https://discord.gg/RMVBA5c62f" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
+                        <div class="d-flex align-items-center">
+                            <svg width="32" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
+                            <span class="mx-4 fw-600">2024 Hackathon Discord</span>
+                        </div>
+                    </a>    
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous Problem Statements  -->
+        <div class="d-flex flex-column justify-content-center h-100 mt-2">
+            <div class="d-flex flex-column text-center text-light">
+                <div class="col-12 mt-5">
+                    <!-- Welcome text -->
+                    <h2 class="mt-4">Previous Problem Statements</h2>
+                    <div id="registration-button" class="text-center">
+                        <a href="https://drive.google.com/drive/folders/1DgcOImHduApIHE1YyoZPnaBgtd6zxeEz"
+                            class="btn btn-primary btn-sm rounded-pill" role="button" aria-pressed="true">
+                            <span class="mx-4 fw-600">Previous Problem Statements</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="col-12 my-5">
+            <h2>Frequently Asked Questions</h2>
+            <br></br>
+            <div class="accordion" id="accordionExample">
+                <!-- FAQ 1 -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is a Hackathon?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse text-left" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A Hackathon is an exciting event where participants come together to tackle a problem or challenge. Teams collaborate to brainstorm, design, and pitch their best solution. It's an opportunity to apply your creativity and problem-solving skills in a practical and open-ended setting.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                But why should I join?
+                            </button>
+                        </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse text-left" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            It is a chance to work on a creative solution with your team mates and meet industry professionals. There is also a prize pool of over $4500.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What skill level do I have to be at in order to join?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse text-left" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            You do not need computing/coding knowledge to join.
+                            <br>The only criteria you need to join is to be a current student (high school, university, TAFE, etc.) and and above 16 years old.</br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse">
+                                Do I need to have a team to participate?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse text-left" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            No, While it is recommended to sign up as a team, we can assign you to a team or help you find a team via our hackathon discord.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How many people are allowed in a team?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse text-left" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Teams are 3 to 6 people.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Will there be food provided?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse text-left" aria-labelleSdby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Absolutely! There will be food, drinks, and snacks provided on all three days of the Hackathon. We will take into account all dietary limitations to the best of our ability.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Do I need to be there for the whole 3 days?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse text-left" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            No. However, there are certain parts of the event that you do need to attend. At least one team member must attend the opening session, though we suggest as many team members attend as possible. Your whole team must attend the presentations and award ceremony.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Do I need to bring anything for the event?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse text-left" aria-labelledby="headingEight" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Yes, there are a few things you should bring along. Make sure to bring your laptop (with your charger), as it will be your primary tool for developing and presenting your solution. Additionally, consider bringing any other personal items or tools that you might need to support your work during the event.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 9-->
+                <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Okay but who are you guys?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse text-left" aria-labelledby="headingNine" data-parent="#accordionExample">
+                        <div class="card-body">
+                            ComSSA is the club that supports computing, computer engineering, and networking students at Curtin University. We also support non-computing students by providing events and services that give like minded individuals (anyone interested in programming or computing) a space to find support, socialise and communicate.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sponsers -->
+        <div class="col-12 mt-3">
+            <div class="row top-img">
+                <div class="col-12 d-flex flex-column align-items-center my-5">
+                    <h2 class="mb-4">Organised by</h2>
+                    <div class="row sponsors justify-content-center">
+                        <div class="col-6 col-lg-3 d-none d-lg-flex align-items-center justify-content-center mb-3">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_468/v1685110336/ComSSA-Website/C_Reversed.webp"
+                                class="img-fluid sq-img" alt="ComSSA Logo">
+                        </div>
+        
+                        <div class="col-4 col-lg-3 d-flex d-lg-none align-items-center justify-content-center mb-3">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/c_scale,w_468/v1685110336/ComSSA-Website/C_Reversed.webp"
+                                class="img-fluid sq-img" alt="ComSSA Logo">
+                        </div>
+        
+                        <div class="col-4 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                            <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1691561783/Hackathon/EECMS_Graphic.png"
+                                class="img-fluid" alt="Curtin EECMS Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h4 class="w-100 text-center mb-4" style="font-size: 30px">ComSSA is proudly sponsored by</h4>
+            <div class="row sponsors justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686988492/ComSSA-Website/Sponsors/vgw-white.webp"
+                        class="img-fluid" alt="VGW Logo" , style="margin-bottom: 20px">
+                </div>
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1714030624/Hackathon/hackathon2024/WADSIH-light.png"
+                        class="img-fluid" alt="WADSIH Logo">
+                </div>
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1714031041/Hackathon/hackathon2024/Visagio-light.png"
+                        class="img-fluid" alt="Visagio Logo">
+                </div>
+            </div>
+            <div class="row sponsors justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1679834808/ComSSA-Website/Sponsors/bankwest.png"
+                        class="img-fluid" alt="Bankwest Logo">
+                </div>
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mb-3">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1686989834/ComSSA-Website/Sponsors/atlassian-white.svg"
+                        class="img-fluid" alt="Mechanical Rocks Logo" style="height: 90%">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
