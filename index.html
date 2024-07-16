@@ -155,7 +155,7 @@
         text-transform: uppercase;
         border-radius: 0;
     }
-    .btn-primary {
+    .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
         background-color: var(--primary);
         border-color: var(--primary);
         color: var(--primary-c);
@@ -441,8 +441,8 @@
                 
                 <!-- Registration -->
                 <div id="registration-button" class="text-center">
-                    <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
-                        <span class="mx-4 fw-600">Register now</span>
+                    <a href="/register" class="btn btn-primary btn-lg rounded-pill disabled" role="button" aria-pressed="true">
+                        <span class="mx-4 fw-600">Event Ended</span>
                     </a>
                 </div>
 
